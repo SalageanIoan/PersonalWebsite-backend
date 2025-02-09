@@ -1,0 +1,12 @@
+{
+  "name": "Spring Boot Backend",
+  "image": "mcr.microsoft.com/devcontainers/java:17",
+  "postCreateCommand": "./mvnw clean install",
+  "forwardPorts": [8080],
+  "portsAttributes": {
+    "8080": {
+      "label": "Spring Boot Server",
+      "onAutoForward": "openPreview"
+    }
+  }
+}
